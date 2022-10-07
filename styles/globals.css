@@ -1,16 +1,141 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Defining Variables */
+:root {
+  --primary-color: #0284c7;
+  --dark-grey: #334155;
+  --light-grey: #cbd5e1;
+  --footer: #2e3437;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* ---------- Navbar ------------------ */
+.navbar {
+  padding: 1.5rem 0 0 0;
+  min-height: 80px;
+  box-sizing: border-box;
+  /* position: fixed;
+  top: 0; 
+  width: 85%;
+  background-color: white; */
+}
+
+.navbar-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  flex-basis: 30%;
+}
+
+.nav-brand img {
+  width: 60px;
+}
+
+.nav-items {
+  flex-basis: 70%;
+  text-align: end;
+  align-self: center;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  gap: 5%;
+}
+
+.navbar ul {
+  padding-inline-start: 0;
+}
+
+/* ------ list ------ */
+.list-non-bullet {
+  list-style-type: none;
+}
+
+.list-item-inline {
+  display: inline;
+}
+
+.active {
+  font-weight: 600;
+}
+
+/* ------ Links or Anchor Tags ------ */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------- main -------- */
+.main {
+  margin-top: 50px;
+}
+
+/* ------ Hero ------ */
+.hero {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  padding-bottom: 10vh;
+  box-sizing: border-box;
+}
+
+.hero-heading {
+  flex-basis: 62%;
+  font-size: 4vw;
+  font-weight: bold;
+  align-self: center;
+  padding-bottom: 2rem;
+}
+
+.hero-greet {
+  font-size: 2vw;
+}
+
+.hero .identity {
+  font-size: 3vw;
+}
+.hero-img {
+  flex-basis: 38%;
+}
+.hero-img img {
+  width: 100%;
+}
+
+/* social handle */
+.social-handle {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 1.5rem;
+  margin-right: 1.2rem;
+}
+
+.email-handle {
+  margin-left: auto;
 }
