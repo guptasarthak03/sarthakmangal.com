@@ -24,6 +24,12 @@ body {
   color: var(--primary-color);
 }
 
+.divider-hr {
+  border: 1px solid #0000001a;
+  margin: 20px 0 15px 0;
+  width: 80%;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -139,3 +145,53 @@ body {
 .email-handle {
   margin-left: auto;
 }
+
+/** ---------- Section -------**/
+
+section {
+  margin-top: 120px;
+}
+
+.section-header {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* My services */
+
+.section-services .my-services {
+  display: flex;
+}
+
+.section-services .service {
+  width: 30vw;
+  padding-right: 5vw;
+}
+
+.section-services .service img {
+  width: 60px;
+}
+
+.service-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* My Skills */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.skill-item {
+  display: flex;
+  gap: 15px;
+}
+
+.skill-item img {
+  width: 45px;
+}
+
+/* My Projects */
