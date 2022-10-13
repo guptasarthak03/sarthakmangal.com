@@ -1,7 +1,26 @@
 import Navbar from '../components/Navbar';
 import SocialAccount from '../components/common/SocialAccount';
+import ServiceContainer from '../components/container/serviceContainer';
 
 const Home = () => {
+  const serviceCardsList = [
+    {
+      name: 'ui-ux',
+      title: 'UI & UX Design',
+      desc: 'I enjoy creating eye-pleasing, user centeric UI with an essence of minimalistic design.',
+    },
+    {
+      name: 'web-development',
+      title: 'Web Development',
+      desc: 'I am a front-end developer who writes clean and optimized code with mobile-first approach in mind.',
+    },
+    {
+      name: 'performance-seo',
+      title: 'Performance & SEO',
+      desc: 'Proven experience in improving speed & metrics of websites, making it stand out from the crowd.',
+    },
+  ];
+
   // custom inline style for icon
   const projectIconStyleConfig = {
     width: '2.3rem',
@@ -27,7 +46,7 @@ const Home = () => {
               </div>
               <div className="primary identity">A Web Developer</div>
             </div>
-            <div class="hero-img">
+            <div className="hero-img">
               <img src="/images/welcome.svg" alt="hero image" />
             </div>
           </div>
@@ -54,30 +73,15 @@ const Home = () => {
         <section className="section-services">
           <p className="section-header">What I Do ?</p>
           <div className="my-services">
-            <div className="service">
-              <img src="/images/ui-ux.svg" alt="UI-UX" />
-              <p class="service-heading">UI & UX Design</p>
-              <p>
-                I enjoy creating eye-pleasing, user centeric UI with an essence
-                of minimalistic design.
-              </p>
-            </div>
-            <div className="service">
-              <img src="/images/web-development.svg" alt="Web Development" />
-              <p class="service-heading">Web Development</p>
-              <p>
-                I am a front-end developer who writes clean and optimized code
-                with mobile-first approach in mind.
-              </p>
-            </div>
-            <div className="service">
-              <img src="/images/performance-seo.svg" alt="Performance & SEO" />
-              <p class="service-heading">Performance & SEO</p>
-              <p>
-                Proven experience in improving speed & metrics of websites,
-                making it stand out from the crowd.
-              </p>
-            </div>
+            {serviceCardsList.map(card => {
+              return (
+                <ServiceContainer
+                  title={card.title}
+                  name={card.name}
+                  description={card.desc}
+                />
+              );
+            })}
           </div>
         </section>
         <section className="section-skills">
@@ -87,30 +91,30 @@ const Home = () => {
               <img src="/images/nextjs-icon.svg" alt="next-js" />
               <p>Next.JS</p>
             </div>
-            <div class="skill-item">
+            <div className="skill-item">
               <img src="/images/react-icon.svg" alt="react-js" />
               <p>React.JS</p>
             </div>
-            <div class="skill-item">
+            <div className="skill-item">
               <img src="/images/redux.svg" alt="redux" />
               <p>Redux</p>
             </div>
-            <div class="skill-item">
+            <div className="skill-item">
               <img src="/images/html5.svg" alt="next-js" />
               <p>HTML</p>
             </div>
-            <div class="skill-item">
+            <div className="skill-item">
               <img src="/images/css3.svg" alt="css3" />
               <p>CSS</p>
             </div>
           </div>
-          <div class="divider-hr"></div>
-          <div class="skill-items">
-            <div class="skill-item">
+          <div className="divider-hr"></div>
+          <div className="skill-items">
+            <div className="skill-item">
               <img src="/images/version-control.svg" alt="version-control" />
               <p>Version Control</p>
             </div>
-            <div class="skill-item">
+            <div className="skill-item">
               <img src="/images/agile.svg" alt="Agile" />
               <p>Agile Methodology</p>
             </div>
@@ -166,3 +170,5 @@ const Home = () => {
 };
 
 export default Home;
+
+// My Work & My Thoughts
