@@ -2,6 +2,18 @@ import Navbar from '../components/Navbar';
 import SocialAccount from '../components/common/SocialAccount';
 
 const Home = () => {
+  // custom inline style for icon
+  const projectIconStyleConfig = {
+    width: '2.3rem',
+    border: '1px solid rgba(0,0,0,0.3)',
+    borderRadius: '5px',
+  };
+
+  const projectIconHoverConfig = {
+    filter:
+      'invert(41%) sepia(54%) saturate(5853%) hue-rotate(179deg) brightness(94%) contrast(98%)',
+  };
+
   return (
     <div className="container">
       <Navbar />
@@ -22,19 +34,19 @@ const Home = () => {
           <div className="social-handle">
             <SocialAccount
               source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
-              platform="linkedin"
+              name="linkedin"
             />
             <SocialAccount
               source="https://github.com/guptasarthak03"
-              platform="github"
+              name="github"
             />
             <SocialAccount
               source="https://twitter.com/developermangal"
-              platform="twitter"
+              name="twitter"
             />
             <SocialAccount
               source="https://www.instagram.com/sarthak_mangal/"
-              platform="insta"
+              name="insta"
             />
             <div className="email-handle">sarthakMangal.com</div>
           </div>
@@ -106,8 +118,46 @@ const Home = () => {
         </section>
         <section className="section-projects">
           <p className="section-header">What I've been up to ?</p>
-          <div className="project-items">
-            <div className="project-item"></div>
+          <div className="projects-items">
+            <div
+              className="projects-item"
+              style={{ backgroundImage: `url(/images/project-1.jpg)` }}
+            >
+              <div className="content">
+                <p className="heading">Banana Language</p>
+                <p className="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  eveniet provident.
+                </p>
+                <div className="projects-cta">
+                  <SocialAccount
+                    source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
+                    name="code"
+                    isWhite={true}
+                    styleConfig={projectIconStyleConfig}
+                    hoverConfig={projectIconHoverConfig}
+                  />
+                  <SocialAccount
+                    source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
+                    name="preview"
+                    isWhite={true}
+                    styleConfig={projectIconStyleConfig}
+                    hoverConfig={projectIconHoverConfig}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section-blogs">
+          <p className="section-header">My Blogs</p>
+          <div className="blog-items">
+            <div className="blog-item">
+              <div className="card-top"></div>
+              <div className="card-bottom">
+                <p className="blog-heading">Banana Language Translator</p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
