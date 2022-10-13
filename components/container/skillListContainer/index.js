@@ -1,10 +1,10 @@
 import SkillItem from './SkillItem';
-import { skillItemsList } from '../../constants/homepage';
+import { skillItemList } from '../../constants/homepage';
 
 const SkillListContainer = ({ partition }) => {
   return (
     <div className="skill-items">
-      {skillItemsList
+      {skillItemList
         .filter(skill => skill.partition == partition)
         .map(skill => {
           return (

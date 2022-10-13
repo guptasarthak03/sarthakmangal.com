@@ -1,27 +1,9 @@
 import Navbar from '../components/Navbar';
 import SocialAccount from '../components/common/SocialAccount';
-import ServiceContainer from '../components/container/serviceContainer';
+import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 
 const Home = () => {
-  const serviceCardsList = [
-    {
-      name: 'ui-ux',
-      title: 'UI & UX Design',
-      desc: 'I enjoy creating eye-pleasing, user centeric UI with an essence of minimalistic design.',
-    },
-    {
-      name: 'web-development',
-      title: 'Web Development',
-      desc: 'I am a front-end developer who writes clean and optimized code with mobile-first approach in mind.',
-    },
-    {
-      name: 'performance-seo',
-      title: 'Performance & SEO',
-      desc: 'Proven experience in improving speed & metrics of websites, making it stand out from the crowd.',
-    },
-  ];
-
   // custom inline style for icon
   const projectIconStyleConfig = {
     width: '2.3rem',
@@ -73,17 +55,7 @@ const Home = () => {
         </header>
         <section className="section-services">
           <p className="section-header">What I Do ?</p>
-          <div className="my-services">
-            {serviceCardsList.map(card => {
-              return (
-                <ServiceContainer
-                  title={card.title}
-                  name={card.name}
-                  description={card.desc}
-                />
-              );
-            })}
-          </div>
+          <ServicesContainer />
         </section>
         <section className="section-skills">
           <p className="section-header">What I Know ?</p>
