@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import SocialAccount from '../components/common/SocialAccount';
 import ServiceContainer from '../components/container/serviceContainer';
+import SkillListContainer from '../components/container/skillListContainer';
 
 const Home = () => {
   const serviceCardsList = [
@@ -86,39 +87,9 @@ const Home = () => {
         </section>
         <section className="section-skills">
           <p className="section-header">What I Know ?</p>
-          <div className="skill-items">
-            <div className="skill-item">
-              <img src="/images/nextjs-icon.svg" alt="next-js" />
-              <p>Next.JS</p>
-            </div>
-            <div className="skill-item">
-              <img src="/images/react-icon.svg" alt="react-js" />
-              <p>React.JS</p>
-            </div>
-            <div className="skill-item">
-              <img src="/images/redux.svg" alt="redux" />
-              <p>Redux</p>
-            </div>
-            <div className="skill-item">
-              <img src="/images/html5.svg" alt="next-js" />
-              <p>HTML</p>
-            </div>
-            <div className="skill-item">
-              <img src="/images/css3.svg" alt="css3" />
-              <p>CSS</p>
-            </div>
-          </div>
-          <div className="divider-hr"></div>
-          <div className="skill-items">
-            <div className="skill-item">
-              <img src="/images/version-control.svg" alt="version-control" />
-              <p>Version Control</p>
-            </div>
-            <div className="skill-item">
-              <img src="/images/agile.svg" alt="Agile" />
-              <p>Agile Methodology</p>
-            </div>
-          </div>
+          <SkillListContainer partition={1} />
+          <div className="divider-hr" />
+          <SkillListContainer partition={2} />
         </section>
         <section className="section-projects">
           <p className="section-header">What I've been up to ?</p>
