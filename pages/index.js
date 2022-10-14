@@ -4,6 +4,8 @@ import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import { useState } from 'react';
 import Link from 'next/link';
+import ProjectCard from '../components/container/projectsContainer/projectCard';
+import ProjectsContainer from '../components/container/projectsContainer';
 
 const Home = () => {
   const [workHeader, setWorkHeader] = useState('portfolio');
@@ -95,36 +97,7 @@ const Home = () => {
               </button>
             </div>
             <div className="my-projects">
-              <div className="projects-items">
-                <div
-                  className="projects-item"
-                  style={{ backgroundImage: `url(/images/project-1.jpg)` }}
-                >
-                  <div className="content">
-                    <p className="heading">Banana Language</p>
-                    <p className="description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Minus eveniet provident.
-                    </p>
-                    <div className="projects-cta">
-                      <SocialAccount
-                        source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
-                        name="code"
-                        isWhite={true}
-                        styleConfig={projectIconStyleConfig}
-                        hoverConfig={projectIconHoverConfig}
-                      />
-                      <SocialAccount
-                        source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
-                        name="preview"
-                        isWhite={true}
-                        styleConfig={projectIconStyleConfig}
-                        hoverConfig={projectIconHoverConfig}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProjectsContainer />
             </div>
             <div className="my-blogs"></div>
             <div className="view-more">

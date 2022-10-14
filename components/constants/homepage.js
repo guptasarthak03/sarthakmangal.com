@@ -53,3 +53,13 @@ export const skillItemList = [
     partition: 2,
   },
 ];
+
+export const projectCardList = [
+  {
+    bgPath: '/images/project-1.jpg',
+    title: 'Banana Language',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet provident.',
+    codePath: '/',
+    previewPath: '/',
+  },
+];
