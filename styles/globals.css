@@ -179,6 +179,9 @@ section {
 }
 
 /* My Skills */
+.my-skills {
+  margin-top: 35apx;
+}
 .skill-items {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +198,57 @@ section {
 }
 
 /* ----------- Project ------------ */
+.my-work .header-tab {
+  width: max-content;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+}
+
+.my-work button {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.my-work .header-tab .button-active {
+  left: -1px;
+  top: -1px;
+  position: absolute;
+  width: 145px;
+  background: var(--primary-color);
+  border-radius: 30px;
+  transition: 0.5s;
+  height: 36px;
+}
+
+.my-work .header-tab .work-header-active {
+  color: white;
+}
+
+.my-work .view-more {
+  margin: 28px auto;
+  width: max-content;
+  padding: 1px 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.my-work .view-more:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.my-work .view-more a {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--primary-color);
+}
 
 .projects-item {
   width: 280px;
@@ -204,7 +258,7 @@ section {
   max-height: 320px;
   box-sizing: border-box;
   overflow: hidden;
-  transition: transform 500ms ease;
+  transition: transform 400ms ease;
 }
 
 .projects-item:hover {
@@ -216,10 +270,10 @@ section {
   padding: var(--padding);
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
-    rgba(0%, 0%, 0%, 0.6) 15%,
-    rgba(0%, 0%, 0%, 0.5) 65%,
-    rgba(100%, 100%, 100%, 0.1) 80%,
-    rgba(0%, 0%, 0%, 0.1)
+    rgba(0%, 0%, 0%, 0.8) 15%,
+    rgba(0%, 0%, 0%, 0.6) 73%,
+    rgba(100%, 100%, 100%, 0.1) 85%,
+    rgba(0%, 0%, 0%, 1) 95%
   );
   transform: translateY(65%);
   transition: transform 500ms ease;
@@ -278,22 +332,22 @@ section {
 }
 
 /* ---------- My Blogs --------- */
-.blog-items {
+/* .blog-items {
   width: 250px;
   height: 300px;
   background-color: #334155;
   border-radius: 5px;
-}
+} */
 
-.blog-item {
-  /* box-shadow: 2px 2px 5px black; */
-}
+/* .blog-item {
+  box-shadow: 2px 2px 5px black;
+} */
 
-.blog-item .card-top {
+/* .blog-item .card-top {
   height: 180px;
-}
+} */
 
-.blog-item .card-bottom {
+/* .blog-item .card-bottom {
   height: 125px;
   background-color: white;
   border-radius: 25px 25px 0px 0px;
@@ -307,7 +361,7 @@ section {
   padding: 5px 0;
   font-weight: 600;
   width: 90%;
-}
+} */
 
 /* .blog-items .card-top {
   background-image: url('/images/project-minions.jpg');
