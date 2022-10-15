@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/layout/navbar';
 import SocialAccount from '../components/common/SocialAccount';
 import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
-import Footer from '../components/container/footer';
+import Footer from '../components/layout/footer';
 import { projectCardList } from '../components/constants/homepage';
 import BlogCards from '../components/container/blogCards';
 
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <div className="container">
-        <Navbar />
+        <Navbar active="home" />
         <div className="main">
           <header>
             <div className="hero">
