@@ -1,5 +1,5 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* Defining Variables */
 :root {
@@ -247,6 +247,7 @@ section {
 .my-work .view-more a {
   text-decoration: none;
   font-size: 13px;
+  font-weight: 500;
   color: var(--primary-color);
 }
 
@@ -339,22 +340,21 @@ section {
 }
 
 /* ---------- My Blogs --------- */
-/* .blog-items {
+.blog-items {
   width: 250px;
   height: 300px;
   background-color: #334155;
   border-radius: 5px;
-} */
-
-/* .blog-item {
+}
+*/ .blog-item {
   box-shadow: 2px 2px 5px black;
-} */
+}
 
-/* .blog-item .card-top {
+.blog-item .card-top {
   height: 180px;
-} */
+}
 
-/* .blog-item .card-bottom {
+.blog-item .card-bottom {
   height: 125px;
   background-color: white;
   border-radius: 25px 25px 0px 0px;
@@ -368,8 +368,62 @@ section {
   padding: 5px 0;
   font-weight: 600;
   width: 90%;
-} */
+}
 
-/* .blog-items .card-top {
+.blog-items .card-top {
   background-image: url('/images/project-minions.jpg');
-} */
+}
+
+/* ---- Footer ---- */
+footer {
+  margin-top: 6rem;
+  background-color: var(--footer);
+  color: white;
+  padding: 1.2rem 0;
+  border-radius: 12px 12px 0 0;
+}
+
+footer p {
+  margin: 0.4rem;
+}
+
+footer .footer-container {
+  display: flex;
+  gap: 8%;
+}
+
+footer .footer-heading {
+  font-weight: 600;
+}
+
+footer .social-handle {
+  width: 12%;
+  margin: 12px 0px;
+}
+
+footer .social-icon {
+  filter: invert(98%) sepia(97%) saturate(4%) hue-rotate(102deg)
+    brightness(105%) contrast(100%);
+  margin: 4px 8px;
+}
+
+.footer-container .footerbrand {
+  align-self: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-container .footerbrand p {
+  margin: 0;
+}
+
+.footer-container .footerbrand-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.footer-container .page-links {
+  margin-left: auto;
+}

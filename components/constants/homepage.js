@@ -62,4 +62,11 @@ export const projectCardList = [
     codePath: '/',
     previewPath: '/',
   },
+  {
+    bgPath: '/images/project-1.jpg',
+    title: 'Habits App',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet provident.',
+    codePath: '/',
+    previewPath: '/',
+  },
 ];

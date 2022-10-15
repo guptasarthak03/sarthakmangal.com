@@ -1,7 +1,6 @@
 import ProjectCard from './projectCard';
-import { projectCardList } from '../../constants/homepage';
 
-const ProjectsContainer = () => {
+const ProjectsContainer = ({ projectCardList }) => {
   // custom inline style for icon
   const projectIconStyleConfig = {
     width: '2.3rem',
