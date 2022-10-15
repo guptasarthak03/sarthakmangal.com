@@ -140,7 +140,11 @@ body {
 
 .social-icon {
   width: 1.5rem;
-  margin-right: 1.2rem;
+  margin: 5px 1.2rem 0 0;
+}
+
+.social-icon:hover {
+  transition: all 0.2s ease;
 }
 
 .email-handle {
@@ -441,12 +445,6 @@ footer .social-handle {
   margin: 12px 0px;
 }
 
-footer .social-icon {
-  filter: invert(98%) sepia(97%) saturate(4%) hue-rotate(102deg)
-    brightness(105%) contrast(100%);
-  margin: 4px 8px;
-}
-
 .footer-container .footerbrand {
   align-self: center;
   margin: 0 auto;
@@ -466,4 +464,16 @@ footer .social-icon {
 
 .footer-container .page-links {
   margin-left: auto;
+}
+
+.footer-page-links {
+  text-decoration: none;
+  color: white;
+  margin: 0.4rem;
+  display: block;
+}
+
+.footer-page-links:hover {
+  color: var(--primary-color);
+  transition: all 0.2s ease;
 }

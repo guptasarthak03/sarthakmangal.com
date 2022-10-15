@@ -7,7 +7,7 @@ const ProjectCard = ({
   codePath,
   previewPath,
   iconStyleConfig,
-  iconHoverConfig,
+  onHoverPrimary,
 }) => {
   return (
     <div className="project-item" style={{ backgroundImage: `url(${bgPath})` }}>
@@ -20,14 +20,14 @@ const ProjectCard = ({
             name="code"
             isWhite={true}
             styleConfig={iconStyleConfig}
-            hoverConfig={iconHoverConfig}
+            onHoverPrimary={onHoverPrimary}
           />
           <SocialAccount
             source={previewPath}
             name="preview"
             isWhite={true}
             styleConfig={iconStyleConfig}
-            hoverConfig={iconHoverConfig}
+            onHoverPrimary={onHoverPrimary}
           />
         </div>
       </div>

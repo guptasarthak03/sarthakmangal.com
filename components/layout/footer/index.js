@@ -1,5 +1,6 @@
-import SocialAccount from '../../common/SocialAccount';
+import Link from 'next/link';
 import SocialHandle from '../../container/SocialHandle';
+import { navList } from '../../constants/layout';
 
 const Footer = () => {
   return (
@@ -10,17 +11,21 @@ const Footer = () => {
       </div>
       <div class="page-links">
         <p class="footer-heading">Helpful Links</p>
-        <p class="footer-page-links">Home</p>
-        <p class="footer-page-links">About</p>
-        <p class="footer-page-links">Projects</p>
-        <p class="footer-page-links">Blogs</p>
+
+        {navList.map(item => {
+          return (
+            <Link href={item.path}>
+              <a class="footer-page-links">{item.title}</a>
+            </Link>
+          );
+        })}
       </div>
       <div class="contact">
         <p class="footer-heading">Contact</p>
         <p>guptasarthak03@gmail.com</p>
         <p>Gurugram, India</p>
       </div>
-      <SocialHandle />
+      <SocialHandle isWhite={true} onHoverPrimary={true} />
     </div>
   );
 };

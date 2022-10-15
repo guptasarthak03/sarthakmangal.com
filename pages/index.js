@@ -33,7 +33,7 @@ const Home = () => {
                 <img src="/images/welcome.svg" alt="hero image" />
               </div>
             </div>
-            <SocialHandle>
+            <SocialHandle onHoverPrimary={true}>
               <div className="email-handle">sarthakMangal.com</div>
             </SocialHandle>
           </header>

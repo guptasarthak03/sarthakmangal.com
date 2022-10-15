@@ -8,11 +8,6 @@ const ProjectsContainer = ({ projectCardList }) => {
     borderRadius: '5px',
   };
 
-  const projectIconHoverConfig = {
-    filter:
-      'invert(41%) sepia(54%) saturate(5853%) hue-rotate(179deg) brightness(94%) contrast(98%)',
-  };
-
   return (
     <div className="project-items">
       {projectCardList.map(card => {
@@ -24,7 +19,7 @@ const ProjectsContainer = ({ projectCardList }) => {
             codePath={card.codePath}
             previewPath={card.previewPath}
             iconStyleConfig={projectIconStyleConfig}
-            iconHoverConfig={projectIconHoverConfig}
+            onHoverPrimary={true}
           />
         );
       })}
