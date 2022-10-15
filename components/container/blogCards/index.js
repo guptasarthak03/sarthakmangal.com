@@ -1,10 +1,20 @@
 import BlogCard from './blogCard';
 
-const BlogCards = () => {
+const BlogCards = ({ blogCardList }) => {
   return (
     <div className="blog-cards">
-      <BlogCard />
-      <BlogCard />
+      {blogCardList.map(blog => {
+        return (
+          <BlogCard
+            date={blog.date}
+            desc={blog.desc}
+            imgPath={blog.imgPath}
+            tag={blog.tag}
+            title={blog.title}
+            url={blog.url}
+          />
+        );
+      })}
     </div>
   );
 };

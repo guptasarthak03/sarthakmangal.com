@@ -6,7 +6,10 @@ import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
 import Footer from '../components/layout/footer';
-import { projectCardList } from '../components/constants/homepage';
+import {
+  projectCardList,
+  blogCardList,
+} from '../components/constants/homepage';
 import BlogCards from '../components/container/blogCards';
 
 const Home = () => {
@@ -96,7 +99,7 @@ const Home = () => {
                   </div>
                 ) : (
                   <div className="my-blogs">
-                    <BlogCards />
+                    <BlogCards blogCardList={blogCardList} />
                   </div>
                 )}
               </div>

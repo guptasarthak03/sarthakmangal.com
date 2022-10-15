@@ -230,17 +230,14 @@ section {
   width: 145px;
   background: var(--primary-color);
   border-radius: 12px;
-  transition: 0.5s;
+  transition: 1s;
   height: 36px;
 }
 
 .my-work .header-tab .work-header-active {
   color: white;
+  cursor: text;
 }
-
-/* .my-work .work-body {
-  height: 400px;
-} */
 
 .my-work .view-more {
   margin: 28px auto;
