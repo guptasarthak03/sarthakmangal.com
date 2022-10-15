@@ -7,9 +7,10 @@ import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
 import Footer from '../components/container/footer';
 import { projectCardList } from '../components/constants/homepage';
+import BlogCards from '../components/container/blogCards';
 
 const Home = () => {
-  const [workHeader, setWorkHeader] = useState('portfolio');
+  const [workHeader, setWorkHeader] = useState('blog');
 
   return (
     <div>
@@ -79,7 +80,7 @@ const Home = () => {
                   }
                   onClick={() => setWorkHeader('portfolio')}
                 >
-                  My Portfolio
+                  My Projects
                 </button>
                 <button
                   className={workHeader == 'blog' ? 'work-header-active' : ''}
@@ -88,13 +89,17 @@ const Home = () => {
                   My Blogs
                 </button>
               </div>
-              {workHeader == 'portfolio' ? (
-                <div className="my-projects">
-                  <ProjectsContainer projectCardList={projectCardList} />
-                </div>
-              ) : (
-                <div className="my-blogs" />
-              )}
+              <div className="work-body">
+                {workHeader == 'portfolio' ? (
+                  <div className="my-projects">
+                    <ProjectsContainer projectCardList={projectCardList} />
+                  </div>
+                ) : (
+                  <div className="my-blogs">
+                    <BlogCards />
+                  </div>
+                )}
+              </div>
               <div className="view-more">
                 <Link href="/">
                   <a>View All</a>
