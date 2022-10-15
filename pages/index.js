@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Navbar from '../components/layout/navbar';
-import SocialAccount from '../components/common/SocialAccount';
 import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
 import Footer from '../components/layout/footer';
+import BlogCards from '../components/container/BlogCards';
+import SocialHandle from '../components/container/SocialHandle';
 import {
   projectCardList,
   blogCardList,
 } from '../components/constants/homepage';
-import BlogCards from '../components/container/blogCards';
 
 const Home = () => {
   const [workHeader, setWorkHeader] = useState('blog');
@@ -33,25 +33,9 @@ const Home = () => {
                 <img src="/images/welcome.svg" alt="hero image" />
               </div>
             </div>
-            <div className="social-handle">
-              <SocialAccount
-                source="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
-                name="linkedin"
-              />
-              <SocialAccount
-                source="https://github.com/guptasarthak03"
-                name="github"
-              />
-              <SocialAccount
-                source="https://twitter.com/developermangal"
-                name="twitter"
-              />
-              <SocialAccount
-                source="https://www.instagram.com/sarthak_mangal/"
-                name="insta"
-              />
+            <SocialHandle>
               <div className="email-handle">sarthakMangal.com</div>
-            </div>
+            </SocialHandle>
           </header>
           <section className="section-services">
             <p className="section-header">What I Do ?</p>

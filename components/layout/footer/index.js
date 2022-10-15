@@ -1,3 +1,6 @@
+import SocialAccount from '../../common/SocialAccount';
+import SocialHandle from '../../container/SocialHandle';
+
 const Footer = () => {
   return (
     <div class="container footer-container">
@@ -17,47 +20,7 @@ const Footer = () => {
         <p>guptasarthak03@gmail.com</p>
         <p>Gurugram, India</p>
       </div>
-      <div class="social-handle">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/sarthak-gupta-b64480102/"
-            target="_blank"
-          >
-            <img
-              class="social-icon"
-              src="/images/icon-linkedin.svg"
-              alt="linkedIn"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/guptasarthak03" target="_blank">
-            <img
-              class="social-icon"
-              src="/images/icon-github.svg"
-              alt="github"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://twitter.com/developermangal" target="_blank">
-            <img
-              class="social-icon"
-              src="/images/icon-twitter.svg"
-              alt="twitter"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/sarthak_mangal/" target="_blank">
-            <img
-              class="social-icon"
-              src="/images/icon-insta.svg"
-              alt="instagram"
-            />
-          </a>
-        </div>
-      </div>
+      <SocialHandle />
     </div>
   );
 };
