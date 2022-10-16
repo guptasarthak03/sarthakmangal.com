@@ -8,6 +8,7 @@
   --light-grey: #9b9b9b;
   --lightest-grey: #ececec;
   --footer: #2e3437;
+  --light-blue: #b2c9c7;
 }
 
 * {
@@ -491,18 +492,17 @@ footer .social-handle {
 
 /* ================== Projects Page ================================================ */
 
-/* hero */
 .projects-main {
-  margin-top: 24px;
+  /* margin-top: 28px; */
 }
-.hero-projects {
-}
+
+/* hero */
 .hero-projects .quote {
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 8px;
   line-height: 44px;
-  background-color: #b2c9c7;
+  background-color: var(--light-blue);
   padding: 12px 18px 12px 18px;
   border-radius: 8px;
   color: #1b1b1d;
@@ -511,4 +511,13 @@ footer .social-handle {
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
+}
+
+.projects-main section .section-header {
+  margin-bottom: 12px;
+}
+
+.projects-main section .section-description {
+  max-width: 40%;
+  margin-bottom: 50px;
 }

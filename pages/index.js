@@ -29,9 +29,6 @@ const Home = () => {
                 <p className="primary hero-identity">A Web Developer</p>
               </div>
             </Hero>
-            <SocialHandle onHoverPrimary={true}>
-              <div className="email-handle">sarthakMangal.com</div>
-            </SocialHandle>
           </header>
           <section className="section-services">
             <p className="section-header">What I Do ?</p>

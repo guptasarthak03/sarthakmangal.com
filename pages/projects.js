@@ -1,6 +1,8 @@
+import ProjectsContainer from '../components/container/projectsContainer';
 import Footer from '../components/layout/footer';
 import Hero from '../components/layout/hero';
 import Navbar from '../components/layout/navbar';
+import { projectCardList } from '../components/constants/homepage';
 
 const ProjectsPage = () => {
   return (
@@ -21,6 +23,17 @@ const ProjectsPage = () => {
               </div>
             </Hero>
           </header>
+          <section>
+            <p className="section-header">My Portfolio</p>
+            <p className="section-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse eos
+              sit deleniti quidem ut doloremque ea omnis reiciendis.
+            </p>
+            <div className="my-projects">
+              <ProjectsContainer projectCardList={projectCardList} />
+            </div>
+          </section>
+          <section></section>
         </div>
       </div>
       <footer>

@@ -7,7 +7,7 @@ export const serviceCardList = [
   {
     name: 'web-development',
     title: 'Web Development',
-    desc: 'I am a front-end developer who writes clean and optimized code with mobile-first approach in mind.',
+    desc: "I'm a software developer who writes clean, modular & optimized code with mobile-first approach in mind.",
   },
   {
     name: 'performance-seo',
