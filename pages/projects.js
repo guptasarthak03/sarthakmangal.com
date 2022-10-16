@@ -2,7 +2,7 @@ import ProjectsContainer from '../components/container/projectsContainer';
 import Footer from '../components/layout/footer';
 import Hero from '../components/layout/hero';
 import Navbar from '../components/layout/navbar';
-import { projectCardList } from '../components/constants/homepage';
+import { projectDataList } from '../components/constants/pageData';
 
 const ProjectsPage = () => {
   return (
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
               sit deleniti quidem ut doloremque ea omnis reiciendis.
             </p>
             <div className="my-projects">
-              <ProjectsContainer projectCardList={projectCardList} />
+              <ProjectsContainer projectCardList={projectDataList.reverse()} />
             </div>
           </section>
           <section></section>

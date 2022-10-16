@@ -13,11 +13,13 @@ const ProjectsContainer = ({ projectCardList }) => {
       {projectCardList.map(card => {
         return (
           <ProjectCard
-            bgPath={card.bgPath}
+            key={card.title}
+            imgPath={card.imgPath}
             title={card.title}
             desc={card.desc}
-            codePath={card.codePath}
-            previewPath={card.previewPath}
+            tech={card.tech}
+            codeUrl={card.codeUrl}
+            previewUrl={card.previewUrl}
             iconStyleConfig={projectIconStyleConfig}
             onHoverPrimary={true}
           />
