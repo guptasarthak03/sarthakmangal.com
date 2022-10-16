@@ -11,7 +11,6 @@ const Footer = () => {
       </div>
       <div class="page-links">
         <p class="footer-heading">Helpful Links</p>
-
         {navList.map(item => {
           return (
             <Link href={item.path}>

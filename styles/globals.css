@@ -1,5 +1,5 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 
 /* Defining Variables */
 :root {
@@ -41,10 +41,6 @@ body {
   padding: 1.5rem 0 0 0;
   min-height: 80px;
   box-sizing: border-box;
-  /* position: fixed;
-  top: 0; 
-  width: 85%;
-  background-color: white; */
 }
 
 .navbar-elements {
@@ -85,6 +81,7 @@ body {
 
 .active {
   font-weight: 600;
+  cursor: default;
 }
 
 /* ------ Links or Anchor Tags ------ */
@@ -105,23 +102,37 @@ body {
   height: 60vh;
   padding-bottom: 10vh;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .hero-heading {
-  flex-basis: 62%;
-  font-size: 4vw;
-  font-weight: bold;
+  flex-basis: 55%;
   align-self: center;
+}
+
+.hero-heading p {
+  margin: 0;
+}
+
+.hero-home {
   padding-bottom: 2rem;
 }
 
 .hero-greet {
   font-size: 2vw;
+  font-weight: bold;
 }
 
-.hero .identity {
-  font-size: 3vw;
+.hero-intro {
+  font-size: 4vw;
+  font-weight: bold;
 }
+
+.hero-identity {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
 .hero-img {
   flex-basis: 38%;
 }
@@ -476,4 +487,28 @@ footer .social-handle {
 .footer-page-links:hover {
   color: var(--primary-color);
   transition: all 0.2s ease;
+}
+
+/* ================== Projects Page ================================================ */
+
+/* hero */
+.projects-main {
+  margin-top: 24px;
+}
+.hero-projects {
+}
+.hero-projects .quote {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  line-height: 44px;
+  background-color: #b2c9c7;
+  padding: 12px 18px 12px 18px;
+  border-radius: 8px;
+  color: #1b1b1d;
+}
+.hero-projects .author {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
 }

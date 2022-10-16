@@ -1,15 +1,13 @@
 import { useState } from 'react';
 
-const SocialAccount = props => {
-  const {
-    source,
-    name,
-    isWhite = false,
-    onHoverPrimary = false,
-    styleConfig = {},
-    hoverConfig = {},
-  } = props;
-
+const SocialAccount = ({
+  source,
+  name,
+  isWhite = false,
+  onHoverPrimary = false,
+  styleConfig = {},
+  hoverConfig = {},
+}) => {
   // style config for white color
   styleConfig = isWhite
     ? {

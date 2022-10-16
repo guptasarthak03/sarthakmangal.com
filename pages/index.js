@@ -4,9 +4,10 @@ import Navbar from '../components/layout/navbar';
 import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
-import Footer from '../components/layout/footer';
 import BlogCards from '../components/container/BlogCards';
 import SocialHandle from '../components/container/SocialHandle';
+import Hero from '../components/layout/hero';
+import Footer from '../components/layout/footer';
 import {
   projectCardList,
   blogCardList,
@@ -21,18 +22,13 @@ const Home = () => {
         <Navbar active="home" />
         <div className="main">
           <header>
-            <div className="hero">
-              <div className="hero-heading">
-                <div className="primary hero-greet">Hello</div>
-                <div>
-                  I'm <strong>Sarthak Mangal</strong>,
-                </div>
-                <div className="primary identity">A Web Developer</div>
+            <Hero page="home">
+              <div className="hero-home">
+                <p className="primary hero-greet">Hello</p>
+                <p className="hero-intro">I'm Sarthak Mangal,</p>
+                <p className="primary hero-identity">A Web Developer</p>
               </div>
-              <div className="hero-img">
-                <img src="/images/welcome.svg" alt="hero image" />
-              </div>
-            </div>
+            </Hero>
             <SocialHandle onHoverPrimary={true}>
               <div className="email-handle">sarthakMangal.com</div>
             </SocialHandle>
@@ -42,7 +38,7 @@ const Home = () => {
             <ServicesContainer />
           </section>
           <section className="section-skills">
-            <p className="section-header">What I Know ?</p>
+            <p className="section-header">Stuff I'm good at</p>
             <div className="my-skills">
               <SkillListContainer partition={1} />
               <div className="divider-hr" />
