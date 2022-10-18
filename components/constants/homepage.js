@@ -63,12 +63,4 @@ export const blogCardList = [
     title: 'Is a dev project in a Service Based IT Company still a dream ?',
     url: '/',
   },
-  {
-    date: 'Nov 15, 2022',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, quidem expedita. Perspiciatis commodi quisquam, excepturi magnam, corrupti.',
-    imgPath: '/images/blog-tools.jpg',
-    tag: 'Corporate Life',
-    title: 'Is a dev project in a Service Based IT Company still a dream ?',
-    url: '/',
-  },
 ];

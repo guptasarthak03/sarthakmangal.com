@@ -7,6 +7,7 @@ const ServicesContainer = () => {
       {serviceCardList.map(card => {
         return (
           <ServiceCard
+            key={card.name}
             title={card.title}
             name={card.name}
             description={card.desc}

@@ -11,7 +11,7 @@ const Navbar = ({ active = 'home' }) => {
         <ul className="list-non-bullet nav-items">
           {navList.map(item => {
             return (
-              <li className="list-item-inline">
+              <li key={item.name} className="list-item-inline">
                 <Link href={item.path}>
                   <a className={`link ${item.name == active ? 'active' : ''} `}>
                     {item.title}

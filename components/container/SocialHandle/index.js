@@ -11,6 +11,7 @@ const SocialHandle = ({
       {socialHandleList.map(account => {
         return (
           <SocialAccount
+            key={account.name}
             source={account.path}
             name={account.name}
             isWhite={isWhite}

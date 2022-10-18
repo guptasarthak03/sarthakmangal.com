@@ -63,7 +63,7 @@ body {
   align-self: center;
   margin-left: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 5%;
 }
 

@@ -4,23 +4,23 @@ import { navList } from '../../constants/layout';
 
 const Footer = () => {
   return (
-    <div class="container footer-container">
-      <div class="footerbrand">
-        <p class="footerbrand-heading">Portfolio</p>
+    <div className="container footer-container">
+      <div className="footerbrand">
+        <p className="footerbrand-heading">Portfolio</p>
         <p>Sarthak Mangal</p>
       </div>
-      <div class="page-links">
-        <p class="footer-heading">Helpful Links</p>
+      <div className="page-links">
+        <p className="footer-heading">Helpful Links</p>
         {navList.map(item => {
           return (
-            <Link href={item.path}>
-              <a class="footer-page-links">{item.title}</a>
+            <Link key={item.title} href={item.path}>
+              <a className="footer-page-links">{item.title}</a>
             </Link>
           );
         })}
       </div>
-      <div class="contact">
-        <p class="footer-heading">Contact</p>
+      <div className="contact">
+        <p className="footer-heading">Contact</p>
         <p>guptasarthak03@gmail.com</p>
         <p>Gurugram, India</p>
       </div>

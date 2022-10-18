@@ -1,4 +1,4 @@
-import BlogCard from './blogCard';
+import BlogCard from './BlogCard';
 
 const BlogCards = ({ blogCardList }) => {
   return (
@@ -6,6 +6,7 @@ const BlogCards = ({ blogCardList }) => {
       {blogCardList.map(blog => {
         return (
           <BlogCard
+            key={blog.title}
             date={blog.date}
             desc={blog.desc}
             imgPath={blog.imgPath}

@@ -28,7 +28,7 @@ const SocialAccount = ({
   const [hoverState, setHoverState] = useState(false);
 
   return (
-    <div class="account-handle">
+    <div className="account-handle">
       <a href={source} target="_blank">
         <img
           className="social-icon"

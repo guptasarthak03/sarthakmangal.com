@@ -5,6 +5,8 @@ import Navbar from '../components/layout/navbar';
 import { projectDataList } from '../components/constants/pageData';
 
 const ProjectsPage = () => {
+  const projectData = projectDataList.reverse();
+
   return (
     <div>
       <div className="container">
@@ -30,7 +32,7 @@ const ProjectsPage = () => {
               sit deleniti quidem ut doloremque ea omnis reiciendis.
             </p>
             <div className="my-projects">
-              <ProjectsContainer projectCardList={projectDataList.reverse()} />
+              {/* <ProjectsContainer projectCardList={projectData} /> */}
             </div>
           </section>
           <section></section>

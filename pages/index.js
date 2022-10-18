@@ -14,6 +14,7 @@ import {
 import { projectDataList } from '../components/constants/pageData';
 
 const Home = () => {
+  const projectData = projectDataList.slice(-3).reverse();
   const [workHeader, setWorkHeader] = useState('blog');
 
   return (
@@ -72,9 +73,7 @@ const Home = () => {
               <div className="work-body">
                 {workHeader == 'portfolio' ? (
                   <div className="my-projects">
-                    <ProjectsContainer
-                      projectCardList={projectDataList.slice(-3).reverse()}
-                    />
+                    {/* <ProjectsContainer projectCardList={projectData} /> */}
                   </div>
                 ) : (
                   <div className="my-blogs">
