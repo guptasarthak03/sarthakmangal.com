@@ -1,5 +1,5 @@
-import BlogCards from '../components/container/BlogCards';
 import Footer from '../components/layout/footer';
+import BlogsContainer from '../components/container/BlogsContainer';
 import Hero from '../components/layout/hero';
 import Navbar from '../components/layout/navbar';
 import { blogCardList } from '../components/constants/homepage';
@@ -28,7 +28,7 @@ const BlogsPage = () => {
               sit deleniti quidem ut doloremque ea omnis reiciendis.
             </p>
             <div className="my-blogs">
-              <BlogCards blogCardList={blogCardList} />
+              <BlogsContainer blogCardList={blogCardList} />
             </div>
           </section>
         </div>

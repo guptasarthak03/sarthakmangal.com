@@ -4,7 +4,7 @@ import Navbar from '../components/layout/navbar';
 import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
-import BlogCards from '../components/container/BlogCards';
+import BlogsContainer from '../components/container/BlogsContainer';
 import Hero from '../components/layout/hero';
 import Footer from '../components/layout/footer';
 import { blogCardList } from '../components/constants/homepage';
@@ -75,7 +75,7 @@ const Home = () => {
                   </div>
                 ) : (
                   <div className="my-blogs">
-                    <BlogCards blogCardList={blogCardList} />
+                    <BlogsContainer blogCardList={blogCardList} />
                   </div>
                 )}
               </div>

@@ -1,6 +1,6 @@
 import BlogCard from './BlogCard';
 
-const BlogCards = ({ blogCardList }) => {
+const BlogsContainer = ({ blogCardList }) => {
   return (
     <div className="blog-cards">
       {blogCardList.map(blog => {
@@ -20,4 +20,4 @@ const BlogCards = ({ blogCardList }) => {
   );
 };
 
-export default BlogCards;
+export default BlogsContainer;
