@@ -5,13 +5,13 @@ import ServicesContainer from '../components/container/servicesContainer';
 import SkillListContainer from '../components/container/skillListContainer';
 import ProjectsContainer from '../components/container/projectsContainer';
 import BlogCards from '../components/container/BlogCards';
-import SocialHandle from '../components/container/SocialHandle';
 import Hero from '../components/layout/hero';
 import Footer from '../components/layout/footer';
 import {
   projectCardList,
   blogCardList,
 } from '../components/constants/homepage';
+import { projectDataList } from '../components/constants/pageData';
 
 const Home = () => {
   const [workHeader, setWorkHeader] = useState('blog');
@@ -72,7 +72,9 @@ const Home = () => {
               <div className="work-body">
                 {workHeader == 'portfolio' ? (
                   <div className="my-projects">
-                    <ProjectsContainer projectCardList={projectCardList} />
+                    <ProjectsContainer
+                      projectCardList={projectDataList.slice(-3).reverse()}
+                    />
                   </div>
                 ) : (
                   <div className="my-blogs">

@@ -20,4 +20,13 @@ export const projectDataList = [
     desc: "How many episodes of TKSS have you seen? Let's test your score in a fun quiz on Kapil & his show. A Mark-2 project.",
     tech: 'CLI',
   },
+  {
+    id: 'portfolio-website',
+    title: 'Portfolio Website',
+    imgPath: '/images/projects/portfolio-website.jpg',
+    previewUrl: 'https://sarthakmangal.com/',
+    codeUrl: 'https://github.com/guptasarthak03/sarthakmangal.com',
+    desc: "My personal portfolio website. Its has been one of my most dearest of projects. Yeah! I'm biased😜",
+    tech: 'NextJS',
+  },
 ];

@@ -54,23 +54,6 @@ export const skillItemList = [
   },
 ];
 
-export const projectCardList = [
-  {
-    bgPath: '/images/project-1.jpg',
-    title: 'Banana Language',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet provident.',
-    codePath: '/',
-    previewPath: '/',
-  },
-  {
-    bgPath: '/images/project-1.jpg',
-    title: 'Habits App',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet provident.',
-    codePath: '/',
-    previewPath: '/',
-  },
-];
-
 export const blogCardList = [
   {
     date: 'Nov 15, 2022',
