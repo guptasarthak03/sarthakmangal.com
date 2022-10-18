@@ -7,14 +7,12 @@ import ProjectsContainer from '../components/container/projectsContainer';
 import BlogCards from '../components/container/BlogCards';
 import Hero from '../components/layout/hero';
 import Footer from '../components/layout/footer';
-import {
-  projectCardList,
-  blogCardList,
-} from '../components/constants/homepage';
+import { blogCardList } from '../components/constants/homepage';
 import { projectDataList } from '../components/constants/pageData';
 
 const Home = () => {
   const projectData = projectDataList.slice(-3).reverse();
+  /*.reverse() might have caused direct modification of the original list but slice() creates a shallow copy of last 3 elements first, therefor no change.*/
   const [workHeader, setWorkHeader] = useState('blog');
 
   return (
@@ -73,7 +71,7 @@ const Home = () => {
               <div className="work-body">
                 {workHeader == 'portfolio' ? (
                   <div className="my-projects">
-                    {/* <ProjectsContainer projectCardList={projectData} /> */}
+                    <ProjectsContainer projectCardList={[...projectData]} />
                   </div>
                 ) : (
                   <div className="my-blogs">

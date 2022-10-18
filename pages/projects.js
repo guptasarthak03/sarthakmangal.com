@@ -5,7 +5,8 @@ import Navbar from '../components/layout/navbar';
 import { projectDataList } from '../components/constants/pageData';
 
 const ProjectsPage = () => {
-  const projectData = projectDataList.reverse();
+  const projectData = [...projectDataList].reverse();
+  // creating shallow copy before applying .reverse() to prevent original array from mutation.
 
   return (
     <div>
@@ -32,7 +33,7 @@ const ProjectsPage = () => {
               sit deleniti quidem ut doloremque ea omnis reiciendis.
             </p>
             <div className="my-projects">
-              {/* <ProjectsContainer projectCardList={projectData} /> */}
+              <ProjectsContainer projectCardList={projectData} />
             </div>
           </section>
           <section></section>
