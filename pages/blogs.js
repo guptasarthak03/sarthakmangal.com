@@ -14,7 +14,8 @@ const BlogsPage = () => {
             <Hero page="blogs">
               <div className="hero-projects">
                 <p className="quote">
-                  "The first draft is just you, telling yourself the story."
+                  &quot;The first draft is just you, telling yourself the
+                  story.&quot;
                 </p>
                 <p className="author primary">-Terry Pratchett</p>
               </div>

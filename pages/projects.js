@@ -17,8 +17,8 @@ const ProjectsPage = () => {
             <Hero page="projects">
               <div className="hero-projects">
                 <p className="quote">
-                  "The Web as I envisaged it, we have not seen it yet. The
-                  future is still so much bigger than the past."
+                  &quot;The Web as I envisaged it, we have not seen it yet. The
+                  future is still so much bigger than the past.&quot;
                 </p>
                 <p className="author primary">
                   -Tim Berners Lee, Inventor of the World Wide Web.

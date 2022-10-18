@@ -24,7 +24,7 @@ const Home = () => {
             <Hero page="home">
               <div className="hero-home">
                 <p className="primary hero-greet">Hello</p>
-                <p className="hero-intro">I'm Sarthak Mangal,</p>
+                <p className="hero-intro">I&#39;m Sarthak Mangal,</p>
                 <p className="primary hero-identity">A Web Developer</p>
               </div>
             </Hero>
@@ -34,7 +34,7 @@ const Home = () => {
             <ServicesContainer />
           </section>
           <section className="section-skills">
-            <p className="section-header">Stuff I'm good at</p>
+            <p className="section-header">Stuff I&#39;m good at</p>
             <div className="my-skills">
               <SkillListContainer partition={1} />
               <div className="divider-hr" />
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
           </section>
           <section className="section-projects-blogs">
-            <p className="section-header">What I've been up to ?</p>
+            <p className="section-header">What I&#39;ve been up to ?</p>
             <div className="my-work">
               <div className="header-tab">
                 <div

@@ -29,7 +29,7 @@ const SocialAccount = ({
 
   return (
     <div className="account-handle">
-      <a href={source} target="_blank">
+      <a href={source} target="_blank" rel="noreferrer">
         <img
           className="social-icon"
           src={`/images/icon-${name}.svg`}
