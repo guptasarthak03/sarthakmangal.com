@@ -34,6 +34,7 @@ body {
 
 .container {
   width: 85%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -135,7 +136,7 @@ body {
 }
 
 .hero-img {
-  flex-basis: 38%;
+  flex-basis: 37%;
 }
 .hero-img img {
   width: 100%;
@@ -526,4 +527,81 @@ footer .social-handle {
 .projects-main section .section-description {
   max-width: 40%;
   margin-bottom: 50px;
+}
+
+/* ------------------- Media Queries --------------- */
+@media only screen and (max-width: 920px) {
+  /* Hero */
+  .hero-greet {
+    font-size: 2.5vw;
+  }
+  .hero-intro {
+    font-size: 4.4vw;
+  }
+  .hero-identity {
+    font-size: 3.5vw;
+  }
+  .social-icon {
+    width: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  /* ------- main -------- */
+  .main {
+    margin-top: 50px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .hero-heading {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .hero-greet {
+    font-size: 22px;
+  }
+  .hero-intro {
+    font-size: 35px;
+  }
+  .hero-identity {
+    font-size: 28px;
+  }
+  .hero-img {
+    width: 235px;
+  }
+  .social-handle {
+    margin-top: 4vh;
+  }
+  .social-icon {
+    width: 1.2rem;
+    margin: 5px 17px 0 0;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+  /* Hero */
+  .hero {
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+
+  .hero p {
+    margin: 5px 0;
+  }
+  .hero-greet {
+    font-size: 20px;
+  }
+  .hero-intro {
+    font-size: 30px;
+  }
+  .hero-identity {
+    font-size: 25px;
+  }
+  .hero-img {
+    width: 210px;
+  }
 }

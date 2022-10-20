@@ -29,19 +29,19 @@ const Home = () => {
               </div>
             </Hero>
           </header>
-          <section className="section-services">
+          {/* <section className="section-services">
             <p className="section-header">What I Do ?</p>
             <ServicesContainer />
-          </section>
-          <section className="section-skills">
+          </section> */}
+          {/* <section className="section-skills">
             <p className="section-header">Stuff I&#39;m good at</p>
             <div className="my-skills">
               <SkillListContainer partition={1} />
               <div className="divider-hr" />
               <SkillListContainer partition={2} />
             </div>
-          </section>
-          <section className="section-projects-blogs">
+          </section> */}
+          {/* <section className="section-projects-blogs">
             <p className="section-header">What I&#39;ve been up to ?</p>
             <div className="my-work">
               <div className="header-tab">
@@ -85,12 +85,12 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </div>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 };
