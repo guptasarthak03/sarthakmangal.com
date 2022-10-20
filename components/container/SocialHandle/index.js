@@ -8,17 +8,20 @@ const SocialHandle = ({
 }) => {
   return (
     <div className="social-handle">
-      {socialHandleList.map(account => {
-        return (
-          <SocialAccount
-            key={account.name}
-            source={account.path}
-            name={account.name}
-            isWhite={isWhite}
-            onHoverPrimary={onHoverPrimary}
-          />
-        );
-      })}
+      <div className="left-container">
+        {socialHandleList.map(account => {
+          return (
+            <SocialAccount
+              key={account.name}
+              source={account.path}
+              name={account.name}
+              isWhite={isWhite}
+              onHoverPrimary={onHoverPrimary}
+            />
+          );
+        })}
+      </div>
+
       {children}
     </div>
   );
