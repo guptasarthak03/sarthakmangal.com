@@ -149,7 +149,7 @@ body {
   height: 10vh;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 .social-handle .left-container {
@@ -187,11 +187,16 @@ section {
 
 .section-services .my-services {
   display: flex;
+  gap: 5vw;
+  overflow-x: scroll;
+  padding-bottom: 15px;
 }
 
 .section-services .service {
-  width: 30vw;
-  padding-right: 5vw;
+  max-width: 280px;
+  min-width: 280px;
+  border: 1px solid var(--lightest-grey);
+  padding: 5px 10px;
 }
 
 .section-services .service img {
@@ -535,6 +540,13 @@ footer .social-handle {
 .projects-main section .section-description {
   max-width: 40%;
   margin-bottom: 50px;
+}
+
+/* Common */
+.carousel-container {
+  height: 246px;
+  overflow-y: hidden;
+  width: 100%;
 }
 
 /* ------------------- Media Queries --------------- */

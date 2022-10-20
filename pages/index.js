@@ -29,10 +29,10 @@ const Home = () => {
               </div>
             </Hero>
           </header>
-          {/* <section className="section-services">
+          <section className="section-services">
             <p className="section-header">What I Do ?</p>
             <ServicesContainer />
-          </section> */}
+          </section>
           {/* <section className="section-skills">
             <p className="section-header">Stuff I&#39;m good at</p>
             <div className="my-skills">
