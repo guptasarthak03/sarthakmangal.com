@@ -604,6 +604,31 @@ footer .social-handle {
   .email-handle {
     margin: auto;
   }
+
+  /* sections */
+  .section-header {
+    font-size: 28px;
+  }
+
+  /* my services */
+  .my-services .service img {
+    width: 54px;
+  }
+  .my-services .service-heading {
+    font-size: 1rem;
+  }
+  .my-services p {
+    font-size: 0.9rem;
+  }
+  .section-services .service {
+    max-width: 250px;
+    min-width: 250px;
+  }
+
+  /* common */
+  .carousel-container {
+    height: 225px;
+  }
 }
 
 @media only screen and (max-width: 492px) {
@@ -628,5 +653,24 @@ footer .social-handle {
   }
   .hero-img {
     width: 210px;
+  }
+
+  /* sections */
+  .section-header {
+    font-size: 25px;
+  }
+
+  /* my services */
+  .my-services .service img {
+    width: 50px;
+  }
+  .section-services .service {
+    max-width: 235px;
+    min-width: 235px;
+  }
+
+  /* common */
+  .carousel-container {
+    height: 215px;
   }
 }
