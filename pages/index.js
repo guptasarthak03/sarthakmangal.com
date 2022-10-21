@@ -9,6 +9,7 @@ import Hero from '../components/layout/hero';
 import Footer from '../components/layout/footer';
 import { blogCardList } from '../components/constants/homepage';
 import { projectDataList } from '../components/constants/pageData';
+import CarouselContainer from '../components/common/carousel/CarouselContainer';
 
 const Home = () => {
   const projectData = projectDataList.slice(-3).reverse();
@@ -33,14 +34,18 @@ const Home = () => {
             <p className="section-header">What I Do ?</p>
             <ServicesContainer />
           </section>
-          {/* <section className="section-skills">
+          <section className="section-skills">
             <p className="section-header">Stuff I&#39;m good at</p>
             <div className="my-skills">
-              <SkillListContainer partition={1} />
+              <CarouselContainer>
+                <SkillListContainer partition={1} />
+              </CarouselContainer>
               <div className="divider-hr" />
-              <SkillListContainer partition={2} />
+              <CarouselContainer>
+                <SkillListContainer partition={2} />
+              </CarouselContainer>
             </div>
-          </section> */}
+          </section>
           {/* <section className="section-projects-blogs">
             <p className="section-header">What I&#39;ve been up to ?</p>
             <div className="my-work">

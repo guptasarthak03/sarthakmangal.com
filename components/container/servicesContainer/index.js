@@ -1,9 +1,10 @@
 import ServiceCard from './ServiceCard';
 import { serviceCardList } from '../../constants/homepage';
+import CarouselContainer from '../../common/carousel/CarouselContainer';
 
 const ServicesContainer = () => {
   return (
-    <div className="carousel-container">
+    <CarouselContainer>
       <div className="my-services">
         {serviceCardList.map(card => {
           return (
@@ -16,7 +17,7 @@ const ServicesContainer = () => {
           );
         })}
       </div>
-    </div>
+    </CarouselContainer>
   );
 };
 

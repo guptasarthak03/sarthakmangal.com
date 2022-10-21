@@ -184,12 +184,9 @@ section {
 }
 
 /* My services */
-
 .section-services .my-services {
   display: flex;
   gap: 5vw;
-  overflow-x: scroll;
-  padding-bottom: 15px;
 }
 
 .section-services .service {
@@ -215,13 +212,16 @@ section {
 }
 .skill-items {
   display: flex;
-  flex-wrap: wrap;
   gap: 5vw;
 }
 
 .skill-item {
   display: flex;
   gap: 15px;
+}
+
+.skill-item p {
+  min-width: max-content;
 }
 
 .skill-item img {
@@ -543,10 +543,22 @@ footer .social-handle {
 }
 
 /* Common */
+.section-services .carousel-container {
+  height: 245px;
+}
+
+.section-skills .carousel-container {
+  height: 60px;
+}
+
 .carousel-container {
-  height: 246px;
   overflow-y: hidden;
   width: 100%;
+}
+
+.carousel-items {
+  overflow-x: scroll;
+  padding-bottom: 15px;
 }
 
 /* ------------------- Media Queries --------------- */
@@ -626,8 +638,8 @@ footer .social-handle {
   }
 
   /* common */
-  .carousel-container {
-    height: 225px;
+  .section-services .carousel-container {
+    height: 216px;
   }
 }
 
@@ -669,8 +681,17 @@ footer .social-handle {
     min-width: 235px;
   }
 
+  /* my skills */
+  .skill-item {
+    gap: 10px;
+  }
+
+  .skill-item img {
+    width: 32px;
+  }
+
   /* common */
-  .carousel-container {
+  .section-services .carousel-container {
     height: 215px;
   }
 }
