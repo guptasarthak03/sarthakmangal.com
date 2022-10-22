@@ -93,9 +93,9 @@ const Home = () => {
           </section> */}
         </div>
       </div>
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 };

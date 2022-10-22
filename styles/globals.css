@@ -146,22 +146,23 @@ body {
 .social-handle {
   display: flex;
   align-items: center;
-  height: 10vh;
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
+  height: auto;
 }
 
 .social-handle .left-container {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: center;
   gap: 20px;
 }
 
 .social-icon {
   width: 1.5rem;
-  margin: 5px auto 0;
+  /* margin: 5px auto 0; */
 }
 
 .social-icon:hover {
@@ -464,7 +465,9 @@ footer p {
 
 footer .footer-container {
   display: flex;
-  gap: 8%;
+  gap: 6%;
+  align-items: baseline;
+  padding: 8px 0;
 }
 
 footer .footer-heading {
@@ -482,6 +485,8 @@ footer .social-handle {
   margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
+  min-width: max-content;
+  order: 1;
 }
 
 .footer-container .footerbrand p {
@@ -496,11 +501,12 @@ footer .social-handle {
 
 .footer-container .page-links {
   margin-left: auto;
+  order: 2;
 }
 
 .footer-page-links {
   text-decoration: none;
-  color: white;
+  color: var(--lightest-grey);
   margin: 0.4rem;
   display: block;
 }
@@ -508,6 +514,18 @@ footer .social-handle {
 .footer-page-links:hover {
   color: var(--primary-color);
   transition: all 0.2s ease;
+}
+
+.footer-container .contact {
+  order: 3;
+}
+
+.footer-container .social-handle {
+  order: 4;
+}
+
+footer .social-handle .left-container {
+  gap: 15px;
 }
 
 /* ================== Projects Page ================================================ */
@@ -576,6 +594,11 @@ footer .social-handle {
   .social-icon {
     /* width: 1.3rem; */
   }
+
+  /* footer */
+  footer .social-handle .left-container {
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -640,6 +663,39 @@ footer .social-handle {
   /* common */
   .section-services .carousel-container {
     height: 216px;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+  }
+
+  footer .footer-heading {
+    margin: 32px 0 0;
+  }
+
+  .footer-container .social-handle {
+    order: 2;
+    width: 100%;
+  }
+
+  .footer-container .social-handle {
+    margin: auto;
+  }
+
+  footer .social-handle .left-container {
+    margin: 18px 0 0;
+    gap: 32px;
+  }
+
+  .footer-container .page-links {
+    display: none;
+    order: 3;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-container .contact {
+    display: none;
+    order: 4;
   }
 }
 

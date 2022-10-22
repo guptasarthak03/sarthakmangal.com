@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SocialHandle from '../../container/SocialHandle';
 import { navList } from '../../constants/layout';
+import SocialAccount from '../../common/SocialAccount';
 
 const Footer = () => {
   return (
@@ -11,13 +12,15 @@ const Footer = () => {
       </div>
       <div className="page-links">
         <p className="footer-heading">Helpful Links</p>
-        {navList.map(item => {
-          return (
-            <Link key={item.title} href={item.path}>
-              <a className="footer-page-links">{item.title}</a>
-            </Link>
-          );
-        })}
+        <div className="links">
+          {navList.map(item => {
+            return (
+              <Link key={item.title} href={item.path}>
+                <a className="footer-page-links">{item.title}</a>
+              </Link>
+            );
+          })}
+        </div>
       </div>
       <div className="contact">
         <p className="footer-heading">Contact</p>
